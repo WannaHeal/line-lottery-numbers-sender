@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "line-lottery-numbers-sender"
+version = "0.1.0"
+description = "A LINEⓇ messanger bot which sends lottery numbers as a weekly cronjob"
+authors = ["WannaHeal <wannaheal.kr@gmail.com>"]
+license = "MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+line-bot-sdk = "^2.1.0"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.17.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
