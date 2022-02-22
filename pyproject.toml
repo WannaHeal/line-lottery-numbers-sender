@@ -11,7 +11,17 @@ line-bot-sdk = "^2.1.0"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.17.0"
+pylint = "^2.12.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.messages_control]
+disable = "C0330, C0326"
+
+[tool.pylint.format]
+max-line-length = "88"
